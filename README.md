@@ -1,6 +1,6 @@
 # gatsby-starter-mms
 
-Gatsby start for MMS sites
+Gatsby starter for MMS sites
 
 For an overview of Gatsby project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
 
