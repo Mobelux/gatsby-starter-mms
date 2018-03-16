@@ -1,24 +1,31 @@
-# gatsby-starter-default
-The default Gatsby starter.
+# gatsby-starter-mms
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
+Gatsby start for MMS sites
+
+For an overview of Gatsby project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
 
 ## Install
 
+This Gatsby starter can be installed from the
+[mms-cli](https://github.com/Mobelux/mms-cli), but if it isn't:
+
 Make sure that you have the Gatsby CLI program installed:
+
 ```sh
 npm install --global gatsby-cli
 ```
 
 And run from your CLI:
+
 ```sh
-gatsby new gatsby-example-site
+gatsby new example-mms-site https://github.com/Mobelux/gatsby-starter-mms
 ```
 
-Then you can run it by:
+After installing, you can run it by:
+
 ```sh
-cd gatsby-example-site
-npm run develop
+cd example-mms-site
+yarn develop
 ```
 
 ## Deploy
