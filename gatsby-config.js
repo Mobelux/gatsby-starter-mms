@@ -1,11 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter'
+    title: 'Gatsby/MMS Starter'
   },
   plugins: [
+    'gatsby-plugin-sass',
+    'gatsby-plugin-react-next',
     'gatsby-plugin-react-helmet',
     {
-      resolve: 'gatsby-source-morty',
+      resolve: 'gatsby-source-mms',
       options: {
         account: process.env.MORTY_ACCOUNT,
         accessToken: process.env.MORTY_TOKEN
