@@ -77,7 +77,8 @@ blocks = [
     abstract_photo: abstract,
     blocks: blocks,
     tags: ['Dummy Tag'],
-    template: template
+    template: template,
+    visible: false
   }
 
   if type == Event
@@ -94,10 +95,6 @@ blocks = [
   end
 
   obj = type.create!(params)
-
-  if obj.publish
-    obj.update(primary: false)
-  end
 
   print "."
 end

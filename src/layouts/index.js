@@ -1,17 +1,17 @@
+import 'babel-polyfill';
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-
-import Header from '../components/Header';
-import '../styles/index.css';
+import Announcement from '../components/Announcement';
+import '../styles/main.css';
 
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Gatsby Default Starter"
+      title="Gatsby/MMS Starter"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' }
+        { name: 'description', content: 'Gatsby/MMS Starter' },
+        { name: 'keywords', content: 'gatsby, mms, starter' }
       ]}
     />
     <Header />
