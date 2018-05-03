@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby/MMS Starter'
+    title: 'MMS Starter'
   },
   plugins: [
     'gatsby-plugin-sass',

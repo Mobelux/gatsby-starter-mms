@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-starter-mms",
-  "description": "Gatsby/MMS Starter",
+  "name": "mms-starter-web",
+  "description": "MMS Starter",
   "version": "1.0.0",
   "author": "Mobelux <web@mobelux.com>",
   "dependencies": {
@@ -17,6 +17,7 @@
     "gatsby-plugin-postcss-sass": "^1.0.18",
     "gatsby-plugin-react-helmet": "^2.0.3",
     "gatsby-plugin-react-next": "^1.0.10",
+    "gatsby-plugin-sass": "^1.0.23",
     "gatsby-source-mms": "^0.3.5",
     "react": "^16.2.0",
     "react-ga": "^2.4.1",
@@ -36,7 +37,8 @@
   "keywords": [
     "gatsby"
   ],
-  "license": "MIT",
+  "private": true,
+  "main": "index.js",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",

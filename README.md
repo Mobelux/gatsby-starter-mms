@@ -1,33 +1,33 @@
-# gatsby-starter-mms
+# MMS Starter
+1. [Overview](#overview)  
+2. [Setup](#setup)
+3. [Structure](#structure)  
+4. [Dependencies](#dependencies)
+5. [Testing](#testing)
+6. [Server](#server)
+7. [Caveats](#caveats)  
+8. [Other](#other)
 
-Gatsby starter for MMS sites
+## Overview
+<a name="overview"/>
 
-For an overview of Gatsby project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
+## Setup
+<a name="setup"/>
 
-## Install
+## Structure
+<a name="structure"/>
 
-This Gatsby starter can be installed from the
-[mms-cli](https://github.com/Mobelux/mms-cli), but if it isn't:
+## Dependencies
+<a name="dependencies"/>
 
-Make sure that you have the Gatsby CLI program installed:
+## Testing
+<a name="testing"/>
 
-```sh
-npm install --global gatsby-cli
-```
+## Server
+<a name="server"/>
 
-And run from your CLI:
+## Caveats
+<a name="caveats"/>
 
-```sh
-gatsby new example-mms-site https://github.com/Mobelux/gatsby-starter-mms
-```
-
-After installing, you can run it by:
-
-```sh
-cd example-mms-site
-yarn develop
-```
-
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+## Other
+<a name="other"/>

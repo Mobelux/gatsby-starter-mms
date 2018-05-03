@@ -3,33 +3,29 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import Announcement from '../components/Announcement';
-import '../styles/main.css';
+import '../styles/main.scss';
 
-const TemplateWrapper = ({ children }) => (
-  <div>
-    <Helmet
-      title="Gatsby/MMS Starter"
-      meta={[
-        { name: 'description', content: 'Gatsby/MMS Starter' },
-        { name: 'keywords', content: 'gatsby, mms, starter' }
-      ]}
-    />
-    <Header />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0
-      }}
-    >
-      {children()}
-    </div>
-  </div>
-);
+class TemplateWrapper extends React.Component {
+  constructor(props) {
+    super(props);
+  }
 
-TemplateWrapper.propTypes = {
-  children: PropTypes.func
-};
+  render() {
+    const {
+      children,
+    } = this.props;
+
+    return (
+      <div>
+      Index
+        {children()}
+      </div>
+    );
+  }
+}
 
 export default TemplateWrapper;
+
+TemplateWrapper.propTypes = {
+  children: PropTypes.any
+};
