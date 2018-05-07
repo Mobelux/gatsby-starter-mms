@@ -25,7 +25,7 @@ Event.create!(
   end_time: "End Time",
   price_info: "Price Information",
   call_to_action_text: "Action!",
-  call_to_action_url: "#"
+  call_to_action_url: "https://www.mobelux.com"
 )
 print "."
 
