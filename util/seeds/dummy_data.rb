@@ -1,9 +1,8 @@
-account = Account.find_by(domain_name: 'localhost:3000')
-banner = build_image('db/seeds/files/dummy/banner.png', account)
-abstract = build_image('db/seeds/files/dummy/abstract.png', account)
-image_block_image = build_image('db/seeds/files/dummy/image-block.png', account)
-quote_block_image = build_image('db/seeds/files/dummy/attribution-photo.png', account)
-template = Template.where(account: account).first
+banner = build_image('db/seeds/files/dummy/banner.png', ACCOUNT)
+abstract = build_image('db/seeds/files/dummy/abstract.png', ACCOUNT)
+image_block_image = build_image('db/seeds/files/dummy/image-block.png', ACCOUNT)
+quote_block_image = build_image('db/seeds/files/dummy/attribution-photo.png', ACCOUNT)
+template = Template.where(account: ACCOUNT).first
 description_list_item = DescriptionListItem.new(
   name: "Dummy Description List Item Name",
   description: "Dummy Description List Item Description"
@@ -71,13 +70,13 @@ blocks = [
 
 [ Story, Page, Event ].each do |type|
   section = Section.create(
-    account: account,
+    account: ACCOUNT,
     name: 'Dummy Section',
     page_type: "#{type}"
   )
 
   params = {
-    account: account,
+    account: ACCOUNT,
     title: "Dummy #{type}",
     section: section,
     subtitle: "Dummy subtitle",
@@ -108,4 +107,4 @@ blocks = [
   obj = type.create!(params)
 
   print "."
-end 
+end

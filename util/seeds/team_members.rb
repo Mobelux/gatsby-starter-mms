@@ -1,5 +1,3 @@
-account = Account.find_by(domain_name: 'localhost:3000')
-
 MOBELUX =[
 {
   name: "Matt Clough",
@@ -21,7 +19,7 @@ MOBELUX =[
 
 MOBELUX.each_with_index do |person, i|
   TeamMember.create!(
-    account: account,
+    account: ACCOUNT,
     name: person[:name],
     position: i,
     email: person[:email],

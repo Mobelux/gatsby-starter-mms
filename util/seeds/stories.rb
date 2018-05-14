@@ -1,11 +1,10 @@
-account = Account.find_by(domain_name: 'localhost:3000')
-banner = build_image('db/seeds/files/dummy/banner.png', account)
-abstract = build_image('db/seeds/files/dummy/abstract.png', account)
+banner = build_image('db/seeds/files/dummy/banner.png', ACCOUNT)
+abstract = build_image('db/seeds/files/dummy/abstract.png', ACCOUNT)
 
 Story.create!(
-  account: account,
+  account: ACCOUNT,
   title: "Story",
-  section: Section.where(account: account, name: 'Story').first,
+  section: Section.where(account: ACCOUNT, name: 'Story').first,
   subtitle: "Subtitle",
   slug: "story",
   featured_home: false,
@@ -14,7 +13,7 @@ Story.create!(
   abstract_photo: abstract,
   blocks: nil,
   tags: [ 'Tag' ],
-  template: Template.where(account: account, name: 'Story').first,
+  template: Template.where(account: ACCOUNT, name: 'Story').first,
   visible: true
 )
 print "."

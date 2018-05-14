@@ -1,10 +1,8 @@
-account = Account.find_by(domain_name: 'localhost:3000')
-
 # Defaults
 PAGE_TYPES = [ 'Page', 'Story', 'Event' ]
 PAGE_TYPES.each do |page_type|
   Template.create!(
-    account: account,
+    account: ACCOUNT,
     page_type: page_type,
     name: page_type
   )
@@ -13,7 +11,7 @@ end
 
 # Page Templates
 Template.create!(
-  account: account,
+  account: ACCOUNT,
   page_type: 'Page',
   name: 'Home'
 )

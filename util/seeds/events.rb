@@ -1,11 +1,10 @@
-account = Account.find_by(domain_name: 'localhost:3000')
-banner = build_image('db/seeds/files/dummy/banner.png', account)
-abstract = build_image('db/seeds/files/dummy/abstract.png', account)
+banner = build_image('db/seeds/files/dummy/banner.png', ACCOUNT)
+abstract = build_image('db/seeds/files/dummy/abstract.png', ACCOUNT)
 
 Event.create!(
-  account: account,
+  account:  ACCOUNT,
   title: "Event",
-  section: Section.where(account: account, name: 'Event').first,
+  section: Section.where(account:  ACCOUNT, name: 'Event').first,
   subtitle: "Subtitle",
   slug: "event",
   featured_home: false,
@@ -14,7 +13,7 @@ Event.create!(
   abstract_photo: abstract,
   blocks: nil,
   tags: [ 'Tag' ],
-  template: Template.where(account: account, name: 'Event').first,
+  template: Template.where(account:  ACCOUNT, name: 'Event').first,
   visible: true,
   venue: "Venue",
   venue_address: "Address",

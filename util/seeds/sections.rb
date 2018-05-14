@@ -1,8 +1,6 @@
-account = Account.find_by(domain_name: 'localhost:3000')
-
 [ 'Page', 'Story', 'Event' ].each do |type|
   Section.create!(
-    account: account,
+    account: ACCOUNT,
     name: type,
     page_type: type
   )
