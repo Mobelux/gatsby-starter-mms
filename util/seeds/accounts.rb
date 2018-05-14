@@ -1,5 +1,3 @@
-print "Seeding Accounts..."
-
 account = Account.create!(
   domain_name: 'localhost:3000',
   company_name: 'Gatsby/MMS Starter',
@@ -9,5 +7,3 @@ account = Account.create!(
 mobelux_splash = build_image('../hyde-park-web/util/seeds/files/saunders.jpg', account)
 account.update(splash_image: mobelux_splash)
 account.save
-
-print " \033[32m\u2713\033[0m\n"

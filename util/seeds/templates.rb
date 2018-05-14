@@ -1,5 +1,3 @@
-print "Seeding Templates..."
-
 account = Account.find_by(domain_name: 'localhost:3000')
 
 # Defaults
@@ -19,5 +17,3 @@ Template.create!(
   page_type: 'Page',
   name: 'Home'
 )
-
-print " \033[32m\u2713\033[0m\n"

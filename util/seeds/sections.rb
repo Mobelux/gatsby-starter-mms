@@ -1,5 +1,3 @@
-print "Seeding Sections..."
-
 account = Account.find_by(domain_name: 'localhost:3000')
 
 [ 'Page', 'Story', 'Event' ].each do |type|
@@ -10,5 +8,3 @@ account = Account.find_by(domain_name: 'localhost:3000')
   )
   print "."
 end
-
-print " \033[32m\u2713\033[0m\n"

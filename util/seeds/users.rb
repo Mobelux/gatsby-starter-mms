@@ -1,5 +1,3 @@
-print "Seeding Users..."
-
 account = Account.find_by(domain_name: 'localhost:3000')
 
 ROLES = [ 'Photographer', 'Writer', 'Editor', 'Admin', 'Super' ]
@@ -15,5 +13,3 @@ ROLES.each do |role|
   )
   print "."
 end
-
-print " \033[32m\u2713\033[0m\n"

@@ -1,5 +1,3 @@
-print "Seeding Dummy Data for Gatsby's GQL Schema..."
-
 account = Account.find_by(domain_name: 'localhost:3000')
 banner = build_image('db/seeds/files/dummy/banner.png', account)
 abstract = build_image('db/seeds/files/dummy/abstract.png', account)
@@ -110,6 +108,4 @@ blocks = [
   obj = type.create!(params)
 
   print "."
-end
-
-print " \033[32m\u2713\033[0m\n"
+end 

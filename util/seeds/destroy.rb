@@ -14,5 +14,6 @@ Category.delete_all
 Image.delete_all
 TeamMember.delete_all
 Section.delete_all
+CustomField.delete_all
 
 print " \033[32m\u2713\033[0m\n"

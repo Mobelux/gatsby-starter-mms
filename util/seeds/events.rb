@@ -1,5 +1,3 @@
-print 'Seeding Events...'
-
 account = Account.find_by(domain_name: 'localhost:3000')
 banner = build_image('db/seeds/files/dummy/banner.png', account)
 abstract = build_image('db/seeds/files/dummy/abstract.png', account)
@@ -28,5 +26,3 @@ Event.create!(
   call_to_action_url: "https://www.mobelux.com"
 )
 print "."
-
-print " \033[32m\u2713\033[0m\n"

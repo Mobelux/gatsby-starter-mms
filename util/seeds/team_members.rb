@@ -1,5 +1,3 @@
-print "Seeding Team Members..."
-
 account = Account.find_by(domain_name: 'localhost:3000')
 
 MOBELUX =[
@@ -31,5 +29,3 @@ MOBELUX.each_with_index do |person, i|
   )
   print "."
 end
-
-print " \033[32m\u2713\033[0m\n"
