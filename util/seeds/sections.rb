@@ -2,7 +2,8 @@
   Section.create!(
     account: ACCOUNT,
     name: type,
-    page_type: type
+    page_type: type,
+    display: true
   )
   print "."
 end
