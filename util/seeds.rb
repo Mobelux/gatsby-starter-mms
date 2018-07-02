@@ -15,6 +15,7 @@ require_relative 'seeds/destroy'
   'pages',
   'events',
   'team_members',
+  'customs',
   'dummy_data'
 ].each do |seed_type|
   print "Seeding #{seed_type.humanize.titleize}..."
